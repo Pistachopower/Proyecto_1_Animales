@@ -5,7 +5,20 @@
 </head>
 <body>
 
-<h1>Bienidos colaborador</h1>
+<h1>Bienvenidos a colaborador</h1>
 <p>Esto es una pagina de animales.</p>
+
+{% for Colaborador in colaborador_mostrar%}
+<article>
+    <!--Mostramos información de dicho atributo del objeto Post.-->
+    <p>{{Colaborador.Nombre}}</p>
+    <p>{{Colaborador.Cargo }}</p>
+    <p>{{Colaborador.Fecha_entrada_protectora}}</p>
+
+ 
+    <p>{{protectora.text|linebreaksbr}}</p>
+</article>
+{%  endfor %}
+
 </body>
 </html> 

@@ -5,14 +5,16 @@
     </head>
     <body>
 
-        <h1>Bienidos</h1>
+        <h1>Bienvenidos protectora</h1>
         <p>Esto es protectora.</p>
 
-        {% for protectora in protectora_mostrar %}
+        {% for Protectora in protectora_mostrar %}
             <article>
                 <!--Mostramos información de dicho atributo del objeto Post.-->
-                <time>published: {{protectora.Nombre.Descripcion.Fecha_creacion}}</time>
-                <h2><a href="">{{protectora.title}} </a></h2>
+                <p>{{Protectora.Nombre}}</p>
+                <p>{{Protectora.Descripcion }}</p>
+                <p>{{Protectora.Fecha_creacion}}</p>
+    
                 <p>{{protectora.text|linebreaksbr}}</p>
             </article>
         {%  endfor %}
