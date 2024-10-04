@@ -8,14 +8,14 @@ from django.shortcuts import render
 
 
 # Create your views here.
-def post_list(request):
+def animal_list(request):
    animales = Animal.objects.all()
-   return render(request, 'blog/post_list.html', {"posts_mostrar":animales})
+   return render(request, 'animales/post_list.html', {"animal_mostrar":animales})
 
-def post_list2(request):
+def protectora_list(request):
    protectora = Protectora.objects.all()
-   return render(request, 'blog/post_list.html', {"posts_mostrar":protectora})
+   return render(request, 'animales/post_list.html', {"protectora_mostrar":protectora})
 
-def post_list3(request):
+def colaborador_list(request):
    colaborador = Colaborador.objects.all()
-   return render(request, 'blog/post_list.html', {"posts_mostrar":colaborador})
+   return render(request, 'animales/post_list.html', {"colaborador_mostrar":colaborador})

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina animales</title>
+    </head>
+    <body>
+
+        <h1>Bienidos</h1>
+        <p>Esto es protectora.</p>
+
+        {% for protectora in protectora_mostrar %}
+            <article>
+                <!--Mostramos información de dicho atributo del objeto Post.-->
+                <time>published: {{protectora.Nombre.Descripcion.Fecha_creacion}}</time>
+                <h2><a href="">{{protectora.title}} </a></h2>
+                <p>{{protectora.text|linebreaksbr}}</p>
+            </article>
+        {%  endfor %}
+</body>
+</html> 
